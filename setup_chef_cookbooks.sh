@@ -74,3 +74,6 @@ if [[ ! -d kafka ]]; then
 fi
 [[ -d jmxtrans ]] || git clone https://github.com/jmxtrans/jmxtrans-cookbook.git jmxtrans
 [[ -d cobblerd ]] || git clone https://github.com/cbaenziger/cobbler-cookbook.git cobblerd -b cobbler_profile
+[[ -d bach_common ]] && [[ -d bach_krb5 ]] && [[ -d bach_spark ]] && [[ -d bcpc ]] && [[ -d bcpc-hadoop ]] \
+    && [[ -d bcpc_jmxtrans ]] && [[ -d hannibal ]] && [[ -d kafka-bcpc ]] \
+    || git clone https://github.com/pu239ppy/chef-bach-code
