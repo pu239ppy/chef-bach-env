@@ -53,7 +53,7 @@ no_proxy no_proxy_string
 ENV['GIT_SSL_NO_VERIFY'] = 'true'
 File.umask(0007)
 EOF
-cd cookbooks
+mkdir -p cookbooks; cd cookbooks
 
 # allow versions on cookbooks via "cookbook version"
 for cookbook in "apt 2.4.0" python build-essential ubuntu cron "chef-client 4.2.4" "chef-vault 1.3.0" "ntp 1.10.1" yum logrotate yum-epel sysctl chef_handler 7-zip seven_zip "windows 1.36.6" ark sudo ulimit pam ohai "poise 1.0.12" graphite_handler java "maven 2.1.1" "krb5 2.0.0"; do
